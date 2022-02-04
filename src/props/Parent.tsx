@@ -1,11 +1,11 @@
 import React from 'react';
-import { Child } from './Child';
+import { ChildAsFC } from './Child';
 
 const Parent = () => {
   return (
-    <>
-      <Child color="red" />
-    </>
+      <ChildAsFC color="red" onClick={() => console.log("clicked")}>
+        asdf        
+      </ChildAsFC>
     );
 };
 
